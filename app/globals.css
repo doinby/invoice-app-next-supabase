@@ -1,0 +1,14 @@
+@import 'tailwindcss';
+
+html,
+body {
+	@apply h-full max-h-[3840px];
+}
+
+body {
+	@apply flex flex-col;
+}
+
+main {
+	@apply shrink-0 grow;
+}
