@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import './globals.css';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import ReactQueryProvider from '@/lib/ReactQueryProvider';
+import ReactQueryProvider from '@/ultils/ReactQueryProvider';
 import { ReactNode } from 'react';
 
 export const metadata: Metadata = {
