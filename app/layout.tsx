@@ -1,9 +1,9 @@
 import type { Metadata } from 'next';
 import './globals.css';
-import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import ReactQueryProvider from '@/ultils/ReactQueryProvider';
 import { ReactNode } from 'react';
+import Sidebar from '@/components/Sidebar';
 
 export const metadata: Metadata = {
 	title: 'SaaS App with Supabase',
@@ -13,12 +13,10 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: ReactNode }) {
 	return (
 		<html lang='en' data-theme='dim'>
-			<body className={`antialiased`}>
+			<body className='antialiased m-h-full grid grid-cols-[auto_1fr] grid-rows-[1fr_auto]'>
 				<ReactQueryProvider>
-					<Header />
-					<main className='grid grid-cols-3 gap-12 justify-center'>
-						{children}
-					</main>
+					<Sidebar />
+					{children}
 					<Footer />
 				</ReactQueryProvider>
 			</body>
