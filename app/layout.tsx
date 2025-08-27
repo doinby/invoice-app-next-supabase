@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: ReactNode }) {
 	return (
 		<html lang='en' data-theme='dim'>
-			<body className='antialiased m-h-full grid grid-cols-[auto_1fr] grid-rows-[1fr_auto]'>
+			<body className='antialiased'>
 				<ReactQueryProvider>
 					<Sidebar />
 					{children}
